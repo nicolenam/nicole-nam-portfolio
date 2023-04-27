@@ -3,12 +3,177 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"  href="./styles/style.css"/>
   <title>Nicole Nam Portfolio</title>
 </head>
 <body>
+  <div class="wrapper">
+    <header>
+      <nav class="nav">
+          <div>nicolenam</div>
+          <ul>
+            <li><a href="./" ><img src="./assets/images/icon-github.svg" alt="github icon"></a></li>
+            <li><a href="./" ><img src="./assets/images/icon-linkedin.svg" alt="linkedin icon"></a></li>
+            <li><a href="./"><img src="./assets/images/icon-twitter.svg" alt="twitter icon"></a></li>
+          </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <h1>Nice to meet you! I'm <span>Nicole Nam</span>.</h1>
+          <p>Based in Toronto, I'm a front-end developer passionate about building accessible web apps that users love.</p>
+          <a href="#contact">Contact me</a>
+        </div>
+        <div class="hero__image">
+          <img src="./assets/images/image-profile-desktop.webp" alt="self portrait image">
+        </div>
+      </section>
+      <section class="skills">
+        <ul>
+          <li>
+            <i class="fa-brands fa-html5"></i>
+            <p>html5</p>
+          </li>
+          <li>
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>css</p>
+          </li>
+          <li>
+            <i class="fa-brands fa-js"></i>
+            <p>javascript + es6</p>
+          </li>
+          <li>
+            <i class="fa-brands fa-sass"></i>
+            <p>sass</p>
+          </li>
+          <li>
+            <i class="fa-brands fa-react"></i>
+            <p>react</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-gear"></i>
+            <p>rest api</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-database"></i>
+            <p>firebase</p>
+          </li>
+          <li>
+            <i class="fa-sharp fa-solid fa-terminal"></i>
+            <p>terminal</p>
+          </li>
+          <li>
+            <i class="fa-brands fa-git-alt"></i>
+            <p>git</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p>responsive design</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-universal-access"></i>
+            <p>accessibility</p>
+          </li>
+        </ul>
+      </section>
+      <section class="projects">
+        <div>
+          <h2>Projects</h2>
+          <a href="#contact">contact me</a>
+        </div>
+        <div class="projects__grid">
+          <div class="projects__items">
+            <img src="./assets/images/thumbnail-project-1-large.webp" alt="">
+            <p>Design portfolio</p>
+            <div>
+              <p>html</p>
+              <p>css</p>
+            </div>
+          </div>
+          <div class="projects__items">
+            <img src="./assets/images/thumbnail-project-2-large.webp" alt="">
+            <p>Design portfolio</p>
+            <div>
+              <p>html</p>
+              <p>css</p>
+            </div>
+          </div>
+          <div class="projects__items">
+            <img src="./assets/images/thumbnail-project-3-large.webp" alt="">
+            <p>Design portfolio</p>
+            <div>
+              <p>html</p>
+              <p>css</p>
+            </div>
+          </div>
+          <div class="projects__items">
+            <img src="./assets/images/thumbnail-project-4-large.webp" alt="">
+            <p>Design portfolio</p>
+            <div>
+              <p>html</p>
+              <p>css</p>
+            </div>
+          </div><div class="projects__items">
+            <img src="./assets/images/thumbnail-project-5-large.webp" alt="">
+            <p>Design portfolio</p>
+            <div>
+              <p>html</p>
+              <p>css</p>
+            </div>
+          </div><div class="projects__items">
+            <img src="./assets/images/thumbnail-project-6-large.webp" alt="">
+            <p>Design portfolio</p>
+            <div>
+              <p>html</p>
+              <p>css</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div>
+          <h2>Contact</h2>
+          <p>I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
+        </div>
+        <form action="">
+          <fieldset>
+            <div>
+              <label for="name">name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+              <label for="email">email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="message">message</label>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+          </fieldset>
+          <div>
+            <button type="submit">send message</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div>nicolenam</div>
+      <ul>
+        <li id="contact"><a href="./" ><img src="./assets/images/icon-github.svg" alt="github icon"></a></li>
+        <li><a href="./" ><img src="./assets/images/icon-linkedin.svg" alt="linkedin icon"></a></li>
+        <li><a href="./"><img src="./assets/images/icon-twitter.svg" alt="twitter icon"></a></li>
+      </ul>
+    </footer>
+      
+  </div>
 
-  
-
+  <script
+  src="https://kit.fontawesome.com/5479c1fd3b.js"
+  crossorigin="anonymous"
+></script>
 </body>
 </html>
