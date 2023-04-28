@@ -1,0 +1,58 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+.hero{
+
+    height: 600px;
+    border-bottom: 1px solid v.$color-tertiary;
+
+    &__content{
+
+        h1{
+            font-size: 50px;
+            font-weight: 700;
+            width: 500px;
+            margin: 100px 0 0; 
+
+            span{
+                border-bottom: 5px solid v.$color-accent;
+            }
+        }
+
+        p{
+            font-size: 14px;
+            font-weight: 300;
+            margin: 50px 0;
+            width: 350px;
+            line-height: 20px;
+        }
+
+        a{
+            color: v.$color-tertiary;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding-bottom: 5px;
+            border-bottom: 2px solid v.$color-accent;
+            transition: color .3s ease;
+
+            &:hover{
+                color: v.$color-accent;
+            }
+        }
+
+
+    }
+
+    &__image{
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -100;
+
+        img{
+            width: 445px;
+            height: 720px;
+        }
+    }
+}
