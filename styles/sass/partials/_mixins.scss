@@ -3,6 +3,12 @@
     margin: 0 auto;
 }
 
+@mixin rings {
+    content: url('../../../assets/images/pattern-rings.svg');
+    display: inline-block;
+    position: absolute;
+
+}
 
 
 

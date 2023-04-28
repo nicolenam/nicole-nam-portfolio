@@ -7,9 +7,7 @@
     border-bottom: 1px solid v.$color-tertiary;
 
     &::before{
-        content: url('../../../assets/images/pattern-rings.svg');
-        display: inline-block;
-        position: absolute;
+        @include m.rings;
         top: 100px;
         left: -300px;
     }

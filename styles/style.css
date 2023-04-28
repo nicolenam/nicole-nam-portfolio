@@ -286,6 +286,7 @@ body {
   color: #FFFFFF;
   max-width: 1440px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -378,4 +379,32 @@ ul {
 .hero__image img {
   width: 445px;
   height: 720px;
+}
+
+.skills {
+  margin: 70px 0;
+  position: relative;
+}
+.skills::after {
+  content: url("../../../assets/images/pattern-rings.svg");
+  display: inline-block;
+  position: absolute;
+  width: 300px;
+  right: -100px;
+  bottom: 40px;
+}
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.skills__grid li {
+  margin-bottom: 50px;
+}
+.skills__grid i {
+  font-size: 50px;
+  margin: 15px 0;
+}
+.skills__grid p {
+  font-size: 14px;
+  font-weight: 300;
 }
