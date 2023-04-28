@@ -452,6 +452,10 @@ ul {
   position: relative;
   display: inline-block;
 }
+.projects__img-container {
+  position: relative;
+  display: inline-block;
+}
 .projects__title {
   padding: 10px 0;
   text-transform: uppercase;
@@ -479,6 +483,8 @@ ul {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+  z-index: 100;
+  text-align: center;
 }
 .links a {
   color: #FFFFFF;
@@ -488,4 +494,17 @@ ul {
   border-bottom: 2px solid #4EE1A0;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  display: block;
+  padding: 15px 0;
+  font-size: 12px;
+}
+
+.overlay {
+  background-color: #242424;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
