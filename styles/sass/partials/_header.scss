@@ -1,0 +1,21 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+.nav{
+   display: flex; 
+   justify-content: space-between;
+   padding: 30px 0;
+   
+   &__logo{
+    font-size: 30px;
+    font-weight: 500;
+   }
+
+   &__menu{
+    display: flex;
+
+    li{
+        padding-left: 20px;
+    }
+   }
+}

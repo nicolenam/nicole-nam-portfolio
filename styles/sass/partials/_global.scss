@@ -1,7 +1,16 @@
 @use "./variables" as v;
+@use "./mixins" as m;
 
 body{
     background: v.$color-primary;
     font-family: v.$font-main;
     color: v.$color-tertiary;
+}
+
+.wrapper {
+    @include m.wrapper
+}
+
+ul{
+ list-style-type: none;
 }

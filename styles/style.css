@@ -1,9 +1,3 @@
-body {
-  background: #151515;
-  font-family: "Space Grotesk", sans-serif;
-  color: #FFFFFF;
-}
-
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -284,4 +278,42 @@ html {
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+}
+
+body {
+  background: #151515;
+  font-family: "Space Grotesk", sans-serif;
+  color: #FFFFFF;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+}
+.nav__logo {
+  font-size: 30px;
+  font-weight: 500;
+}
+.nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav__menu li {
+  padding-left: 20px;
 }
