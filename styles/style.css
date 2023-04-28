@@ -574,6 +574,7 @@ ul {
 .contact input, .contact textarea {
   border: none;
   border-bottom: 1px solid #FFFFFF;
+  color: #d9d9d9;
   outline: none;
   background: none;
   padding: 10px 0;
