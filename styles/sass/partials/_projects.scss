@@ -1,0 +1,14 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+.projects{
+    
+    &__header{
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            @include m.contact;
+        }
+    }
+}

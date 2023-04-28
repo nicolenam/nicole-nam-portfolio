@@ -283,6 +283,7 @@ html {
 body {
   background: #151515;
   font-family: "Space Grotesk", sans-serif;
+  font-size: 14px;
   color: #FFFFFF;
   max-width: 1440px;
   margin: 0 auto;
@@ -407,4 +408,22 @@ ul {
 .skills__grid p {
   font-size: 14px;
   font-weight: 300;
+}
+
+.projects__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.projects__header a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #4EE1A0;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }

@@ -46,12 +46,7 @@
         }
 
         a{
-            color: v.$color-tertiary;
-            text-transform: uppercase;
-            text-decoration: none;
-            padding-bottom: 5px;
-            border-bottom: 2px solid v.$color-accent;
-            transition: color .3s ease;
+            @include m.contact;
 
             &:hover{
                 color: v.$color-accent;
