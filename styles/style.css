@@ -417,6 +417,11 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 40px;
+}
+.projects__header h2 {
+  font-size: 30px;
+  font-weight: 700;
 }
 .projects__header a {
   color: #FFFFFF;
@@ -426,4 +431,18 @@ ul {
   border-bottom: 2px solid #4EE1A0;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+}
+.projects__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.projects__items img {
+  width: 450px;
+  height: auto;
 }

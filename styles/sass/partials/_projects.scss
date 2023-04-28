@@ -6,9 +6,32 @@
     &__header{
         display: flex;
         justify-content: space-between;
+        margin-bottom: 40px;
+
+        h2{
+            font-size: 30px;
+            font-weight: 700;
+        }
 
         a{
             @include m.contact;
+        }
+
+
+    }
+
+    &__grid{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+
+    &__items{
+
+        img{
+            width: 450px;
+            height: auto;
         }
     }
 }
