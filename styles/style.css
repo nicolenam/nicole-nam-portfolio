@@ -514,3 +514,70 @@ ul {
   top: 0;
   z-index: 1;
 }
+
+.contact {
+  margin: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact div {
+  width: 40%;
+}
+.contact h2 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 50%;
+}
+.contact form button {
+  border: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #4EE1A0;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+  border-top: 1px solid #FFFFFF;
+}
+footer div {
+  font-size: 30px;
+  font-weight: 500;
+}
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer li {
+  padding: 0 10px;
+}
