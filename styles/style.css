@@ -420,17 +420,25 @@ ul {
   margin-bottom: 40px;
 }
 .projects__header h2 {
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 700;
 }
 .projects__header a {
   color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #4EE1A0;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  position: relative;
+}
+.projects__header a::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #4EE1A0;
 }
 .projects__grid {
   display: -webkit-box;
@@ -445,6 +453,7 @@ ul {
 .projects__items {
   position: relative;
   display: inline-block;
+  margin-bottom: 50px;
 }
 .projects__items img {
   width: 450px;
@@ -473,6 +482,7 @@ ul {
   display: flex;
   gap: 10px;
   margin-bottom: 0;
+  color: #d9d9d9;
 }
 .projects__tech p {
   font-size: 12px;
@@ -524,12 +534,15 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.contact div {
-  width: 40%;
+.contact p {
+  width: 70%;
+  font-weight: 300;
+  color: #d9d9d9;
 }
 .contact h2 {
   font-size: 50px;
   font-weight: 500;
+  margin-bottom: 30px;
 }
 .contact form {
   display: -webkit-box;
@@ -557,6 +570,54 @@ ul {
   padding: 0;
   cursor: pointer;
   font-size: 14px;
+}
+.contact input, .contact textarea {
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  outline: none;
+  background: none;
+  padding: 10px 0;
+  cursor: pointer;
+  width: 400px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.contact textarea {
+  resize: none;
+}
+.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.contact input::-moz-placeholder, .contact textarea::-moz-placeholder {
+  color: #FFFFFF;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.contact input::-ms-input-placeholder, .contact textarea::-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #FFFFFF;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.contact input:hover, .contact textarea:hover {
+  border-bottom: 1px solid #4EE1A0;
 }
 
 footer {
