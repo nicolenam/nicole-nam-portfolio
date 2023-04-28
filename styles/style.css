@@ -442,7 +442,24 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.projects__items div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+}
 .projects__items img {
   width: 450px;
   height: auto;
+}
+.projects__title {
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.projects__tech p {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
 }
