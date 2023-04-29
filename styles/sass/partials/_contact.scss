@@ -22,7 +22,7 @@
     }
 
     p{
-        width: 70%;
+        width: 400px ;
         font-weight: 300;
         color: #d9d9d9;
         line-height: 20px;
@@ -60,7 +60,7 @@
         background: none;
         padding: 10px 0;
         cursor: pointer;
-        width: 400px;
+        width: 400px; 
         transition: all 0.5s ease;
     }
 
@@ -79,5 +79,4 @@
     input:hover, textarea:hover{
         border-bottom: 1px solid v.$color-accent;
     }
-  
 }
