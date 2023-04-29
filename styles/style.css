@@ -312,6 +312,7 @@ ul {
 .nav__logo {
   font-size: 30px;
   font-weight: 500;
+  cursor: pointer;
 }
 .nav__menu {
   display: -webkit-box;
@@ -671,6 +672,7 @@ ul {
 .footer div {
   font-size: 30px;
   font-weight: 500;
+  cursor: pointer;
 }
 .footer ul {
   display: -webkit-box;

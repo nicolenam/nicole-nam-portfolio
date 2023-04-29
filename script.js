@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         e.preventDefault();
 
         const messageElement = document.querySelector('.form-message');
-        const message = "Thank you for your email!";
+        const message = "Thank you for your email :)";
 
         messageElement.innerHTML = message;
         messageElement.style.display = "block";
