@@ -587,7 +587,7 @@ ul {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 50%;
+  width: 100%;
 }
 .contact form button {
   border: none;
