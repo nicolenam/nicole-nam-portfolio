@@ -29,6 +29,11 @@
                 width: 100%;
                 background-color: v.$color-accent;
             }
+
+
+            &:hover{
+                color: v.$color-accent;
+            }
         }
 
 
@@ -48,7 +53,7 @@
         margin-bottom: 50px;
 
         img{
-            width: 450px;
+            width: 400px;
             height: auto;
             position: relative;
             display: inline-block;
@@ -108,6 +113,12 @@
         display: block;
         padding: 15px 0;
         font-size: 12px;
+
+
+        &:hover{
+            color: v.$color-accent;
+
+        }
     }
 }
 

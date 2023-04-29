@@ -321,6 +321,13 @@ ul {
 .nav__menu li {
   padding: 0 10px;
 }
+.nav li svg path {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.nav li svg path:hover {
+  fill: #4EE1A0;
+}
 
 .hero {
   height: 600px;
@@ -440,6 +447,9 @@ ul {
   width: 100%;
   background-color: #4EE1A0;
 }
+.projects__header a:hover {
+  color: #4EE1A0;
+}
 .projects__grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -456,7 +466,7 @@ ul {
   margin-bottom: 50px;
 }
 .projects__items img {
-  width: 450px;
+  width: 400px;
   height: auto;
   position: relative;
   display: inline-block;
@@ -514,6 +524,9 @@ ul {
   padding: 15px 0;
   font-size: 12px;
 }
+.links a:hover {
+  color: #4EE1A0;
+}
 
 .overlay {
   background-color: #242424;
@@ -526,7 +539,19 @@ ul {
 }
 
 .contact {
-  margin: 100px 0;
+  position: relative;
+  padding: 100px 0;
+  background-color: #242424;
+}
+.contact::after {
+  content: url("../../../assets/images/pattern-rings.svg");
+  display: inline-block;
+  position: absolute;
+  width: 300px;
+  left: -200px;
+  top: 300px;
+}
+.contact__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,6 +595,8 @@ ul {
   padding: 0;
   cursor: pointer;
   font-size: 14px;
+  padding: 20px 0 10px;
+  font-family: "Space Grotesk", sans-serif;
 }
 .contact input, .contact textarea {
   border: none;
@@ -621,7 +648,10 @@ ul {
   border-bottom: 1px solid #4EE1A0;
 }
 
-footer {
+.footer {
+  background-color: #242424;
+}
+.footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -631,15 +661,22 @@ footer {
   padding: 30px 0;
   border-top: 1px solid #FFFFFF;
 }
-footer div {
+.footer div {
   font-size: 30px;
   font-weight: 500;
 }
-footer ul {
+.footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-footer li {
+.footer li {
   padding: 0 10px;
+}
+.footer svg path {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.footer svg path:hover {
+  fill: #4EE1A0;
 }

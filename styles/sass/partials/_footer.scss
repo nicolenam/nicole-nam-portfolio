@@ -1,11 +1,16 @@
 @use "./variables" as v;
 @use "./mixins" as m;
 
-footer{
-    display: flex; 
-    justify-content: space-between;
-    padding: 30px 0;
-    border-top: 1px solid v.$color-tertiary;
+.footer{
+
+    background-color: v.$color-secondary;
+
+    &__container{
+        display: flex; 
+        justify-content: space-between;
+        padding: 30px 0;
+        border-top: 1px solid v.$color-tertiary;
+    }
 
     div{
         font-size: 30px;
@@ -18,5 +23,15 @@ footer{
 
     li{
         padding: 0 10px;
+   
+    }
+
+    svg path {
+
+        transition: all .3s ease;
+
+        &:hover{
+            fill: v.$color-accent;
+        }
     }
 }

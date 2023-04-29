@@ -2,9 +2,24 @@
 @use "./mixins" as m;
 
 .contact{
-    margin: 100px 0;
-    display: flex;
-    justify-content: space-between;
+
+    position: relative;
+
+    &::after{
+        @include m.rings;
+        width: 300px;
+        left: -200px;
+        top: 300px;
+    }
+
+    padding: 100px 0;
+    background-color: v.$color-secondary;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+
+    }
 
     p{
         width: 70%;
@@ -31,6 +46,8 @@
             padding: 0;
             cursor: pointer;
             font-size: 14px;
+            padding: 20px 0 10px;
+            font-family: v.$font-main;
         }
     }
 
