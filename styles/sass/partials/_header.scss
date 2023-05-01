@@ -24,6 +24,7 @@
     padding: 0 10px;
     font-size: 20px;
     cursor: pointer;
+    opacity: 0;
     display: none;
    }
 
@@ -34,8 +35,9 @@
     text-align: center;
     background: rgba(v.$color-primary,.7);
     z-index: 1000;
-    display: none;
+    opacity: 0;
     padding: 30px 0;
+    transition: opacity 0.5s ease;
 
     li{
         padding: 30px;        
@@ -44,8 +46,8 @@
             text-decoration: none;
             color: v.$color-tertiary;
             text-transform: uppercase;
+            font-size: 20px;
             transition: all .3s ease;
-
 
             &:hover{
                 color: v.$color-accent
@@ -56,9 +58,10 @@
 }
 
 .show{
+    opacity: 1;
     display: block;
 }
 
 .hide{
-    display: none;
+    opacity: 0;
 }
