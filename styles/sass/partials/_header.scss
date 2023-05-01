@@ -4,7 +4,9 @@
 .nav{
    display: flex; 
    justify-content: space-between;
+   align-items: center;
    padding: 30px 0;
+   position: relative;
    
    &__logo{
     font-size: 30px;
@@ -12,20 +14,51 @@
     cursor: pointer;
    }
 
-   &__menu{
-    display: flex;
-
-    li{
-        padding: 0 10px;
-    }
+   &__hamburger{
+    padding: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
    }
 
-   li svg path {
+   &__close{
+    padding: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+   }
 
-    transition: all .3s ease;
+   &__menu{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(v.$color-primary,.7);
+    z-index: 1000;
+    display: none;
+    padding: 30px 0;
 
-    &:hover{
-        fill: v.$color-accent;
+    li{
+        padding: 30px;        
+
+        a{
+            text-decoration: none;
+            color: v.$color-tertiary;
+            text-transform: uppercase;
+            transition: all .3s ease;
+
+
+            &:hover{
+                color: v.$color-accent
+            }
+        }
     }
+   }
 }
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
 }
