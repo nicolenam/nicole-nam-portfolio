@@ -426,6 +426,18 @@ ul {
   height: 720px;
 }
 
+@media (max-width: 900px) {
+  .hero__content h1, .hero__content p {
+    width: 320px;
+  }
+  .hero__image {
+    right: -90px;
+  }
+  .hero__image img {
+    width: 322px;
+    height: 600px;
+  }
+}
 .skills {
   margin: 70px 0;
   position: relative;
@@ -497,15 +509,17 @@ ul {
   margin-bottom: 50px;
 }
 .projects__items img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  height: 270px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .projects__img-container {
   position: relative;
   display: inline-block;
   overflow: hidden;
   cursor: pointer;
+  width: 100%;
 }
 .projects__img-container:hover .overlay {
   opacity: 0.9;
@@ -574,6 +588,16 @@ ul {
   transition: left 0.7s ease;
 }
 
+@media (max-width: 900px) {
+  .projects__title {
+    text-align: center;
+  }
+  .projects__tech {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .contact {
   position: relative;
   padding: 100px 0;
