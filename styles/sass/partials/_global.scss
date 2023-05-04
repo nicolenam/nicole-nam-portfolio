@@ -14,8 +14,14 @@ body{
 .wrapper {
     @include m.wrapper;
     position: relative;
+}
 
-    
+.fix-menu{
+    @include m.wrapper;
+    position: fixed;
+    top: 0;
+    background: v.$color-primary;
+    z-index: 100;
 }
 
 ul{

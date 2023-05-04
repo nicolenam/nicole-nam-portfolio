@@ -75,7 +75,7 @@
     .hero{
 
         &__content{
-    
+            
             h1, p{
                 width: 320px;
             }
@@ -89,6 +89,33 @@
                 width: 322px;
                 height: 600px;
             }
+        }
+    }
+}
+
+@media (max-width:500px){
+
+    .hero{
+        height: 300px;
+        position: relative;
+        text-align: center;
+
+        &__content{
+            
+            h1{
+                font-size: 30px;
+                width: 100%;
+                margin: 100px 0 0;
+            }
+
+            p{
+                width: 100%;
+                margin: 30px 0;
+            }
+        }
+
+        &__image{
+            display: none;
         }
     }
 }

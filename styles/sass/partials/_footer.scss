@@ -36,5 +36,14 @@
             fill: v.$color-accent;
         }
     }
+
+    i{
+        color: v.$color-tertiary;
+        transition: all .3s ease;
+
+        &:hover{
+            color: v.$color-accent
+        }
+    }
 }
 
