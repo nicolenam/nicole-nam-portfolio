@@ -1,0 +1,17 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+.about{
+
+    border-bottom: 1px solid v.$color-tertiary;
+    padding: 100px 0;
+
+    &__content{
+
+        p{
+            padding-top: 20px;
+            line-height: 2;
+            font-size: 16px;
+        }
+    }
+}
