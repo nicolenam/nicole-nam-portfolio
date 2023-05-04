@@ -4,6 +4,8 @@
 .contact{
 
     position: relative;
+    padding: 100px 0;
+    background-color: v.$color-secondary;
 
     &::after{
         @include m.rings;
@@ -11,9 +13,6 @@
         left: -200px;
         top: 300px;
     }
-
-    padding: 100px 0;
-    background-color: v.$color-secondary;
 
     &__container{
         display: flex;
@@ -80,26 +79,26 @@
     }
 }
 
-
 @media (max-width: 1050px) {
-.contact{
-    
-    &__container{
-        flex-direction: column;
-        align-items: center;
 
-        div{
-            text-align: center;
-        }
+  .contact{
+    text-align: center;
+    &__container{
+        display: block;
     }
 
     form{
-        width: auto;
-        margin: 50px 0 0;
+        display: block;
     }
-}
+
+    p{
+        margin: 20px auto;
+    }
+  
+  }
+
+
 }
 
-@media (max-width: 500px){
-  
-}
+
+
