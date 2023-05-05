@@ -30,4 +30,18 @@ document.addEventListener("DOMContentLoaded", function() {
         menu.classList.toggle('show');
     }
 
+
+    window.addEventListener('scroll', ()=>{
+
+        const nav = document.querySelector('.nav__container');
+        const scrollTop = window.pageYoffset || document.documentElement.scrollTop;
+
+        if (scrollTop > 0) {
+            nav.classList.add('nav__scrolled');
+          } else {
+            nav.classList.remove('nav__scrolled');
+          }
+
+    })
+
 });
