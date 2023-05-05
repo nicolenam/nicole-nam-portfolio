@@ -12,6 +12,7 @@
         width: 300px;
         left: -200px;
         top: 300px;
+        pointer-events: none;
     }
 
     &__container{
@@ -57,7 +58,6 @@
         outline: none;
         background: none;
         padding: 10px 0;
-        cursor: pointer;
         width: 400px; 
         transition: all 0.5s ease;
     }
