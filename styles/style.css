@@ -280,6 +280,10 @@ html {
           box-sizing: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #151515;
   font-family: "Space Grotesk", sans-serif;
@@ -359,6 +363,7 @@ ul {
   z-index: 1000;
   opacity: 0;
   padding: 30px 0;
+  pointer-events: none;
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
@@ -380,12 +385,18 @@ ul {
 .show {
   opacity: 1;
   display: block;
+  pointer-events: all;
 }
 
 .hide {
   opacity: 0;
 }
 
+@media (max-width: 500px) {
+  .nav__logo {
+    font-size: 20px;
+  }
+}
 .hero {
   height: 600px;
   border-bottom: 1px solid #FFFFFF;
@@ -569,8 +580,8 @@ ul {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  -o-object-position: top left;
+     object-position: top left;
 }
 .projects__img-container {
   position: relative;
@@ -660,6 +671,14 @@ ul {
     bottom: 9px;
   }
 }
+@media (max-width: 500px) {
+  .projects__grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .projects__img-container {
+    height: 200px;
+  }
+}
 .contact {
   position: relative;
   padding: 100px 0;
@@ -683,7 +702,7 @@ ul {
           justify-content: space-between;
 }
 .contact p {
-  width: 400px;
+  max-width: 600px;
   font-weight: 300;
   color: #d9d9d9;
   line-height: 20px;
@@ -785,6 +804,21 @@ ul {
     margin: 20px auto;
   }
 }
+@media (max-width: 500px) {
+  .contact {
+    padding: 50px 0;
+  }
+  .contact p {
+    max-width: 100%;
+  }
+  .contact input,
+  .contact textarea {
+    width: 100%;
+  }
+  .contact button {
+    font-size: 12px;
+  }
+}
 .footer {
   background-color: #242424;
 }
@@ -825,4 +859,10 @@ ul {
 }
 .footer i:hover {
   color: #4EE1A0;
+}
+
+@media (max-width: 500px) {
+  .footer div {
+    font-size: 20px;
+  }
 }

@@ -18,9 +18,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const hamburger = document.querySelector('.nav__hamburger');
     const menu = document.querySelector('.nav__menu');
     const close = document.querySelector(('.nav__close'));
+    const menuList = document.querySelector('.nav__menu')
 
     hamburger.addEventListener("click", toggleMenu);
     close.addEventListener("click", toggleMenu);
+    menuList.addEventListener("click", toggleMenu);
 
     function toggleMenu(){
         hamburger.classList.toggle('hide');
