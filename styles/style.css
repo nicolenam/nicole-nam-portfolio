@@ -370,7 +370,8 @@ ul {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 80%;
+  width: 100%;
+  height: 100vh;
   text-align: center;
   background: rgba(21, 21, 21, 0.9);
   z-index: 10;
@@ -418,23 +419,6 @@ ul {
   height: 600px;
   border-bottom: 1px solid #FFFFFF;
 }
-.hero::before {
-  content: url("../../../assets/images/pattern-rings.svg");
-  display: inline-block;
-  position: absolute;
-  top: 100px;
-  left: -300px;
-}
-.hero::after {
-  content: "";
-  display: inline-block;
-  background-image: url("../../../assets/images/pattern-circle.svg");
-  background-size: cover;
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  right: 420px;
-}
 .hero__content {
   z-index: 2;
 }
@@ -442,7 +426,7 @@ ul {
   font-size: 50px;
   font-weight: 700;
   width: 500px;
-  margin: 100px 0 0;
+  margin: 150px 0 0;
 }
 .hero__content h1 span {
   border-bottom: 5px solid #4EE1A0;
@@ -517,14 +501,6 @@ ul {
 .skills {
   margin: 70px 0;
   position: relative;
-}
-.skills::after {
-  content: url("../../../assets/images/pattern-rings.svg");
-  display: inline-block;
-  position: absolute;
-  width: 300px;
-  right: -100px;
-  bottom: 40px;
 }
 .skills__grid {
   display: grid;
@@ -710,15 +686,6 @@ ul {
   position: relative;
   padding: 100px 0;
   background-color: #242424;
-}
-.contact::after {
-  content: url("../../../assets/images/pattern-rings.svg");
-  display: inline-block;
-  position: absolute;
-  width: 300px;
-  left: -200px;
-  top: 300px;
-  pointer-events: none;
 }
 .contact__container {
   display: -webkit-box;

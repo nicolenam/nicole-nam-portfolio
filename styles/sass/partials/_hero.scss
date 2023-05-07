@@ -6,23 +6,23 @@
     height: 600px;
     border-bottom: 1px solid v.$color-tertiary;
 
-    &::before{
-        @include m.rings;
-        top: 100px;
-        left: -300px;
-    }
+    // &::before{
+    //     @include m.rings;
+    //     top: 100px;
+    //     left: -300px;
+    // }
 
-    &::after{
-        content: "";
-        display: inline-block;
-        background-image: url('../../../assets/images/pattern-circle.svg');
-        background-size: cover;
-        width: 70px;
-        height: 70px;
-        position: absolute;
-        right: 420px;
+    // &::after{
+    //     content: "";
+    //     display: inline-block;
+    //     background-image: url('../../../assets/images/pattern-circle.svg');
+    //     background-size: cover;
+    //     width: 70px;
+    //     height: 70px;
+    //     position: absolute;
+    //     right: 420px;
        
-    }
+    // }
 
     &__content{
         z-index: 2;
@@ -31,7 +31,7 @@
             font-size: 50px;
             font-weight: 700;
             width: 500px;
-            margin: 100px 0 0; 
+            margin: 150px 0 0; 
 
             span{
                 border-bottom: 5px solid v.$color-accent;

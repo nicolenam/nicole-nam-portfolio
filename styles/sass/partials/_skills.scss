@@ -5,12 +5,12 @@
     margin: 70px 0;
     position: relative;
 
-    &::after{
-        @include m.rings;
-        width: 300px;
-        right: -100px;
-        bottom: 40px;
-    }
+    // &::after{
+    //     @include m.rings;
+    //     width: 300px;
+    //     right: -100px;
+    //     bottom: 40px;
+    // }
 
     &__grid{
         display: grid;
