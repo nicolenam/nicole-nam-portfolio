@@ -4,6 +4,7 @@
 .skills{
     margin: 70px 0;
     position: relative;
+    z-index: -10;
 
     &::after{
         @include m.rings;

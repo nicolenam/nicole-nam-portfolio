@@ -6,6 +6,7 @@
     position: relative;
     padding: 100px 0;
     background-color: v.$color-secondary;
+    z-index: -10;
 
     &::after{
         @include m.rings;

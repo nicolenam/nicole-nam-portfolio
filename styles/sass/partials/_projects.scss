@@ -2,6 +2,7 @@
 @use "./mixins" as m;
 
 .projects{
+    z-index: -10;
     
     &__header{
         display: flex;
@@ -51,6 +52,7 @@
             height: 100%;
             object-fit: cover;
             object-position: top left;
+
         }
 
     }

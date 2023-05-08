@@ -28,13 +28,14 @@ document.addEventListener("DOMContentLoaded", function() {
         hamburger.classList.toggle('hide');
         close.classList.toggle('show');
         menu.classList.toggle('show');
+        document.body.classList.toggle('no-scroll');
     }
 
 
     window.addEventListener('scroll', ()=>{
 
-        const nav = document.querySelector('.nav__container');
-        const scrollTop = window.pageYoffset || document.documentElement.scrollTop;
+        const nav = document.querySelector('.nav');
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollTop > 0) {
             nav.classList.add('nav__scrolled');

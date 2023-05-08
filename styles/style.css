@@ -318,15 +318,25 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+a:focus, a:active, a:hover {
+  color: inherit;
+  outline: none;
+}
+a:visited {
+  color: inherit;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 @media (max-width: 900px) {
   h2 {
     font-size: 30px;
   }
-}
-.nav {
-  padding: 30px 0;
-  z-index: 1;
-  position: relative;
 }
 .nav__container {
   display: -webkit-box;
@@ -337,6 +347,10 @@ ul {
           justify-content: space-between;
   padding: 20px 0;
   z-index: 100;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .nav__logo {
   font-size: 30px;
@@ -354,6 +368,7 @@ ul {
   cursor: pointer;
   opacity: 0;
   display: none;
+  z-index: 100;
 }
 .nav__menu {
   position: fixed;
@@ -395,10 +410,6 @@ ul {
 
 .hide {
   opacity: 0;
-}
-
-.nav__scrolled {
-  background-color: rgba(21, 21, 21, 0.9);
 }
 
 @media (max-width: 500px) {
@@ -509,6 +520,7 @@ ul {
 .skills {
   margin: 70px 0;
   position: relative;
+  z-index: -10;
 }
 .skills::after {
   content: url("../../../assets/images/pattern-rings.svg");
@@ -556,6 +568,9 @@ ul {
   font-size: 16px;
 }
 
+.projects {
+  z-index: -10;
+}
 .projects__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -702,6 +717,7 @@ ul {
   position: relative;
   padding: 100px 0;
   background-color: #242424;
+  z-index: -10;
 }
 .contact::after {
   content: url("../../../assets/images/pattern-rings.svg");

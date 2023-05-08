@@ -37,7 +37,22 @@ ul{
  list-style-type: none;
 }
 
+a{
+    text-decoration: none;
 
+    &:focus, &:active, &:hover{
+        color: inherit;
+        outline: none;
+    }
+
+    &:visited{
+        color: inherit;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}
 
 @media (max-width:900px){
 
