@@ -28,7 +28,8 @@
         max-width: 600px ;
         font-weight: 300;
         color: #d9d9d9;
-        line-height: 20px;
+        line-height: 25px;
+        font-size: 20px;
     }
 
     h2{
@@ -42,7 +43,7 @@
         flex-direction: column;
         align-items: flex-end;
         width: 100%;
-        
+
         button{
             border: none;
             @include m.contact;
@@ -52,6 +53,10 @@
             font-size: 14px;
             padding: 20px 0 10px;
             font-family: v.$font-main;
+
+            &:hover{
+              color: v.$color-accent;
+            }
         }
     }
 
