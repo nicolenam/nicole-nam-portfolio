@@ -6,11 +6,11 @@
     position: relative;
     padding: 100px 0;
     background-color: v.$color-secondary;
-    z-index: -10;
+    z-index: 1;
 
     &::after{
-        @include m.rings;
-        width: 300px;
+      @include m.rings;
+      width: 300px;
         left: -200px;
         top: 300px;
         pointer-events: none;
@@ -19,6 +19,9 @@
     &__container{
         display: flex;
         justify-content: space-between;
+        margin: 0 auto;
+        padding-top: 80px;
+        max-width: 80%;
     }
 
     p{

@@ -290,19 +290,22 @@ body {
   font-size: 14px;
   color: #FFFFFF;
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   overflow-x: hidden;
 }
 
 .wrapper {
-  width: 80%;
   margin: 0 auto;
+  padding-top: 80px;
+  max-width: 80%;
   position: relative;
 }
 
 .fix-menu {
-  width: 80%;
   margin: 0 auto;
+  padding-top: 80px;
+  max-width: 80%;
   position: fixed;
   top: 0;
   background: #151515;
@@ -347,10 +350,10 @@ a:visited {
           justify-content: space-between;
   padding: 20px 0;
   z-index: 100;
-  margin: 0 auto;
+  position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
+  max-width: 80%;
 }
 .nav__logo {
   font-size: 30px;
@@ -717,7 +720,7 @@ a:visited {
   position: relative;
   padding: 100px 0;
   background-color: #242424;
-  z-index: -10;
+  z-index: 1;
 }
 .contact::after {
   content: url("../../../assets/images/pattern-rings.svg");
@@ -735,6 +738,9 @@ a:visited {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 80px;
+  max-width: 80%;
 }
 .contact p {
   max-width: 600px;
@@ -866,6 +872,9 @@ a:visited {
           justify-content: space-between;
   padding: 30px 0;
   border-top: 1px solid #FFFFFF;
+  margin: 0 auto;
+  padding-top: 80px;
+  max-width: 80%;
 }
 .footer div {
   font-size: 30px;

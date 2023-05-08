@@ -32,17 +32,17 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 
-    window.addEventListener('scroll', ()=>{
+    // window.addEventListener('scroll', ()=>{
 
-        const nav = document.querySelector('.nav');
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    //     const nav = document.querySelector('.nav');
+    //     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-        if (scrollTop > 0) {
-            nav.classList.add('nav__scrolled');
-          } else {
-            nav.classList.remove('nav__scrolled');
-          }
+    //     if (scrollTop > 0) {
+    //         nav.classList.add('nav__scrolled');
+    //       } else {
+    //         nav.classList.remove('nav__scrolled');
+    //       }
 
-    })
+    // })
 
 });

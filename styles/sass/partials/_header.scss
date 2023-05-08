@@ -2,17 +2,16 @@
 @use "./mixins" as m;
 
 .nav{
-
+    
     &__container{
         display: flex;
         justify-content: space-between;
         padding: 20px 0;
         z-index: 100;
-        // position: fixed;
-        margin: 0 auto;
+        position: fixed;
         top: 0;
-        left: 0;
-        right: 0;
+        width: 100%;
+        max-width: 80%;
    }
 
    &__logo{
@@ -79,16 +78,6 @@
 .hide{
     opacity: 0;
 }   
-
-// .nav__scrolled{
-//     background-color: rgba(v.$color-primary,.9);
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     width: 80%;
-// }
-
 
 @media (max-width:500px){
     .nav{

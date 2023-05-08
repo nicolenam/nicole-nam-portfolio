@@ -1,8 +1,9 @@
 @use "./variables" as v;
 
 @mixin wrapper {
-    width: 80%;
     margin: 0 auto;
+    padding-top: 80px;
+    max-width: 80%;
 }
 
 @mixin rings {
