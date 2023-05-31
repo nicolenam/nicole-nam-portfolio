@@ -13,15 +13,8 @@
     }
 
     &::after{
-        content: "";
-        display: inline-block;
-        background-image: url('../../../assets/images/pattern-circle.svg');
-        background-size: cover;
-        width: 70px;
-        height: 70px;
-        position: absolute;
-        right: 420px;
-       
+        @include m.rings;
+        right: -300px;
     }
 
     &__content{
@@ -31,7 +24,7 @@
             font-size: 50px;
             font-weight: 700;
             width: 500px;
-            margin: 150px 0 0; 
+            margin: 250px 0 0; 
 
             span{
                 border-bottom: 5px solid v.$color-accent;
@@ -42,7 +35,7 @@
             font-size: 20px;
             font-weight: 300;
             margin: 50px 0;
-            width: 350px;
+            width: 70%;
             line-height: 20px;
             line-height: 25px;
         }
@@ -83,6 +76,10 @@
             h1, p{
                 width: 320px;
             }
+        }
+
+        &::after{
+            display: none;
         }
 
         &__image{

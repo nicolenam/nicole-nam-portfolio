@@ -432,14 +432,10 @@ a:visited {
   left: -300px;
 }
 .hero::after {
-  content: "";
+  content: url("../../../assets/images/pattern-rings.svg");
   display: inline-block;
-  background-image: url("../../../assets/images/pattern-circle.svg");
-  background-size: cover;
-  width: 70px;
-  height: 70px;
   position: absolute;
-  right: 420px;
+  right: -300px;
 }
 .hero__content {
   z-index: 2;
@@ -448,7 +444,7 @@ a:visited {
   font-size: 50px;
   font-weight: 700;
   width: 500px;
-  margin: 150px 0 0;
+  margin: 250px 0 0;
 }
 .hero__content h1 span {
   border-bottom: 5px solid #4EE1A0;
@@ -457,7 +453,7 @@ a:visited {
   font-size: 20px;
   font-weight: 300;
   margin: 50px 0;
-  width: 350px;
+  width: 70%;
   line-height: 20px;
   line-height: 25px;
 }
@@ -490,6 +486,9 @@ a:visited {
   }
   .hero__content h1, .hero__content p {
     width: 320px;
+  }
+  .hero::after {
+    display: none;
   }
   .hero__image {
     right: -90px;
