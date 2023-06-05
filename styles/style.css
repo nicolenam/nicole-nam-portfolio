@@ -349,8 +349,10 @@ a:visited {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 100;
-  top: 0;
-  width: 100%;
+  top: 50px;
+  width: 1440px;
+  max-width: 80%;
+  position: fixed;
 }
 .nav__logo {
   font-size: 30px;
