@@ -35,6 +35,11 @@
 
 @media (max-width:500px){
     .skills{
+
+        &::after{
+           display: none;
+        }
+
         &__grid{
             grid-template-columns: repeat(3, 1fr);
             text-align: center;
